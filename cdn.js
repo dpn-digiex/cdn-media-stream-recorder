@@ -2189,7 +2189,7 @@ function GifRecorder(mediaStream) {
     var video = document.createElement('video');
     video.muted = true;
     video.autoplay = true;
-    video.src = URL.createObjectURL(mediaStream);
+    video.src = mediaStream;
     video.play();
 
     var lastAnimationFrame = null;
