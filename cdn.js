@@ -1800,7 +1800,7 @@ function WhammyRecorderHelper(mediaStream, root) {
             video = this.video.cloneNode();
         } else {
             video = document.createElement('video');
-            video.src = URL.createObjectURL(mediaStream);
+            video.src = mediaStream;
 
             video.width = this.video.width;
             video.height = this.video.height;
